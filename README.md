@@ -1,6 +1,6 @@
 # twilio-lambda-cron
 
-This project will poll an [AirVisual Pro](https://www.iqair.com/air-quality-monitors/airvisual-pro) device-specific API endpoint using a cron trigger and alert if the CO2 concentration or PM2.5 if above a configurable threshold. This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. You must have an AirVisual Pro device linked to an iqair.com account to make use of this respository.
+This project will poll an [AirVisual Pro](https://www.iqair.com/air-quality-monitors/airvisual-pro) device-specific API endpoint using a cron trigger and alert if the CO2 concentration or PM2.5 is above a configurable threshold. This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. You must have an AirVisual Pro device linked to an iqair.com account to make use of this respository.
 
 ## Deploy the sample application
 
@@ -9,8 +9,10 @@ The Serverless Application Model Command Line Interface (SAM CLI) is an extensio
 To use the SAM CLI, you need the following tools.
 
 * SAM CLI - [Install the SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
-* Node.js - [Install Node.js 10](https://nodejs.org/en/), including the NPM package management tool.
+* Node.js - [Install Node.js](https://nodejs.org/en/), including the NPM package management tool.
 * Docker - [Install Docker community edition](https://hub.docker.com/search/?type=edition&offering=community)
+
+You will also need a [Twilio account](https://console.twilio.com/) with Account SID and Auth Token.
 
 To build and deploy your application for the first time, run the following in your shell:
 
